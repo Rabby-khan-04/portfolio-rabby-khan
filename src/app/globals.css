@@ -7,9 +7,17 @@
 }
 
 .primary__btn {
-  @apply bg-primary text-sm text-accent px-12 py-3 rounded-md border border-primary hover:bg-accent hover:text-primary duration-300 transition-all;
+  @apply bg-primary text-sm text-accent px-12 py-[10px] rounded-md border border-primary hover:bg-accent hover:text-primary duration-300 transition-all;
+}
+
+.nav__link {
+  @apply text-sm text-off-white px-4 py-[6px] border border-transparent transition-all duration-300 hover:bg-[#ffffff14] hover:border-[#ffffff14] rounded-md;
 }
 
 .outline__btn {
-  @apply bg-accent text-sm text-off-white px-12 py-3 rounded-md border border-off-white hover:bg-off-white hover:text-accent duration-300 transition-all;
+  @apply bg-accent text-sm text-off-white px-12 py-[10px] rounded-md border border-off-white hover:bg-off-white hover:text-accent duration-300 transition-all;
+}
+
+.btn__sm {
+  @apply bg-off-white text-sm px-4 py-[6px] rounded-md border border-off-white;
 }

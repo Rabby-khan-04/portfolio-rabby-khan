@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import logo from "@/assets/images/logo/logo.png";
+import "./Navbar.css";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -24,11 +28,47 @@ const Navbar = () => {
   return (
     <motion.header
       initial={{ y: 0 }}
-      animate={{ y: visible ? 0 : -72 }}
+      animate={{ y: visible ? 0 : -100 }}
       transition={{ duration: 0.3 }}
-      className="sticky top-0"
+      className="sticky top-0 p-3 z-50"
     >
-      <h2 className="text-primary">Rabby Khan</h2>
+      <nav className="rounded-xl p-4 navbar flex justify-between items-center">
+        <Image src={logo} height={40} alt="logo" />
+
+        <ul className="flex items-center gap-3">
+          <li>
+            <a href="/" className="nav__link">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/" className="nav__link">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/" className="nav__link">
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="/" className="nav__link">
+              Resume
+            </a>
+          </li>
+        </ul>
+
+        <ul className="flex items-center gap-8">
+          <li>
+            <FaGithub className="text-2xl text-light" />
+          </li>
+          <li>
+            <button type="button" className="btn__sm">
+              Lets Work
+            </button>
+          </li>
+        </ul>
+      </nav>
     </motion.header>
   );
 };
