@@ -27,10 +27,10 @@ const Cursor = () => {
       ]}
       showSystemCursor={true}
       innerStyle={{
-        backgroundColor: "red",
+        backgroundColor: "#3bc2fe",
       }}
       outerStyle={{
-        border: "3px solid red",
+        border: "3px solid #3bc2fe",
       }}
     />
   );

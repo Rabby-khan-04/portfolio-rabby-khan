@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  @apply max-w-[1300px] mx-auto px-3 lg:px-4 xl:px-0;
+}
+
+.primary__btn {
+  @apply bg-primary text-sm text-accent px-12 py-3 rounded-md border border-primary hover:bg-accent hover:text-primary duration-300 transition-all;
+}
+
+.outline__btn {
+  @apply bg-accent text-sm text-off-white px-12 py-3 rounded-md border border-off-white hover:bg-off-white hover:text-accent duration-300 transition-all;
+}
