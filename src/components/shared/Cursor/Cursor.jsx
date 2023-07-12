@@ -8,9 +8,9 @@ const Cursor = () => {
   return (
     <AnimatedCursor
       innerSize={8}
-      outerSize={50}
+      outerSize={40}
       innerScale={1}
-      outerScale={1.4}
+      outerScale={1.25}
       outerAlpha={0}
       clickables={[
         "a",

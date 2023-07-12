@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-accent`}>
         <Cursor />
         <Navbar />
-        <main className="h-[5000px]">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

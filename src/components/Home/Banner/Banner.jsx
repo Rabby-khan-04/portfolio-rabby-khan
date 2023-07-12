@@ -14,7 +14,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="h-screen banner py-32" style={backgroundStyle}>
+    <section className="banner py-32" style={backgroundStyle}>
       <div className="container grid grid-cols-8 gap-8">
         <div className="intro col-span-5 space-y-6">
           <h3 className="text-lg font-semibold text-primary">
@@ -42,8 +42,8 @@ const Banner = () => {
           </p>
           <p className="text-light-gray text-lg">
             I am always keen to learn and explore new technologies, frameworks
-            and programming languages. Currently, I{"'"}m learning about Astro
-            and Replicache.
+            and programming languages. Currently, I{"'"}m learning about
+            Tree.js.
           </p>
           <div className="flex items-center gap-8">
             <button type="button" className="primary__btn">
