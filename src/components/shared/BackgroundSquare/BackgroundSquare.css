@@ -1,0 +1,75 @@
+.square {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 20;
+  width: 96px;
+  height: 96px;
+  background-image: url("../../../assets/images/process/square_1.svg"),
+    url("../../../assets/images/process/square_2.svg");
+  background-position: 50% 50%, 50% 50%;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  opacity: 1;
+  -webkit-transition: 222ms;
+  transition: 222ms;
+}
+
+.square.one {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+}
+.square.two {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.square.three {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.square.four {
+  position: absolute;
+  left: auto;
+  top: 25%;
+  right: 10%;
+  bottom: auto;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.square.five {
+  left: 23%;
+  top: 52%;
+  right: auto;
+  bottom: auto;
+}
+
+.square.six {
+  left: auto;
+  top: 52%;
+  right: 23%;
+  bottom: auto;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}

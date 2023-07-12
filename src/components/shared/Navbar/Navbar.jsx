@@ -60,12 +60,14 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-8">
           <li>
-            <FaGithub className="text-2xl text-light" />
+            <a href="https://github.com/Rabby-khan-04">
+              <FaGithub className="text-2xl text-light transition-all duration-300 hover:text-primary" />
+            </a>
           </li>
           <li>
-            <button type="button" className="btn__sm">
+            <a href="mailto:ajrabbyk72@gmail.com" className="btn__sm">
               Lets Work
-            </button>
+            </a>
           </li>
         </ul>
       </nav>

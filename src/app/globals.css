@@ -21,3 +21,16 @@
 .btn__sm {
   @apply bg-off-white text-sm px-4 py-[6px] rounded-md border border-off-white;
 }
+
+.hero__heading {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

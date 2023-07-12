@@ -20,7 +20,7 @@ const Banner = () => {
           <h3 className="text-lg font-semibold text-primary">
             Welcome to my site
           </h3>
-          <h1 className="text-7xl font-bold text-light">
+          <h1 className="text-7xl font-bold hero__heading">
             I{"'"}m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondery">
               Rabby Khan
@@ -46,9 +46,9 @@ const Banner = () => {
             Tree.js.
           </p>
           <div className="flex items-center gap-8">
-            <button type="button" className="primary__btn">
+            <a href="mailto:ajrabbyk72@gmail.com" className="primary__btn">
               Let{"'"}s Work
-            </button>
+            </a>
             <button type="button" className="outline__btn">
               Resume
             </button>

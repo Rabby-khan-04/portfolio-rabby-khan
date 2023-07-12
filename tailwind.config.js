@@ -13,7 +13,7 @@ module.exports = {
         secondery: "#9a6ff8",
         accent: "#0b011d",
         light: "#c9c7cd",
-        "light-gray": "#94a3b8",
+        "light-gray": "#b5abcb",
         "light-gray2": "#a3acb9",
         "off-white": "#dcdfe3",
       },
