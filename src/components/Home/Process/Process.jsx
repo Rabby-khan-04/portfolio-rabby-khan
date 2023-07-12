@@ -7,10 +7,11 @@ const Process = () => {
   return (
     <section className="process py-32">
       <div className="container relative">
-        <BackgroundSquare count={2} />
+        <BackgroundSquare count={4} />
         <div className="intro text-center max-w-4xl mx-auto">
           <h2 className="hero__heading text-7xl font font-medium mb-4">
-            The Alchemy of Creation
+            The Alchemy <br />
+            of Creation
           </h2>
           <p className="text-light-gray text-xl">
             Diving into the Steps and Strategies of my Creative Process

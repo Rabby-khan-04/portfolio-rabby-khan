@@ -1,18 +1,14 @@
-.process__card {
+.project__thumbnail {
   background: radial-gradient(
       50% 70.31% at 50% 0%,
-      rgba(126, 61, 255, 0.08) 0%,
+      rgba(126, 61, 255, 0.04) 0%,
       rgba(126, 61, 255, 0) 100%
     ),
-    rgba(11, 1, 29, 0.9);
-  backdrop-filter: blur(12px);
+    rgba(11, 1, 29, 0.01);
+  backdrop-filter: blur(8.5px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0);
-
-  position: relative;
 }
-
-.process__card::before {
+.project__thumbnail::before {
   content: "";
   box-sizing: border-box;
   position: absolute;

@@ -1,0 +1,8 @@
+.work {
+  background: radial-gradient(
+      33.82% 46.83% at 50% 0%,
+      rgba(126, 61, 255, 0.08) 0%,
+      rgba(126, 61, 255, 0) 100%
+    ),
+    #0b011d;
+}
