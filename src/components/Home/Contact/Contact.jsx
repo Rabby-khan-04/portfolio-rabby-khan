@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" name="contact">
       <div className="line__brake"></div>
       <div className="container py-32 relative">
         <BackgroundSquare />

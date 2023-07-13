@@ -5,7 +5,7 @@ import Counter from "@/components/shared/Counter/Counter";
 
 const About = () => {
   return (
-    <section className="py-32 about">
+    <section className="py-32 about" name="about">
       <div className="container grid grid-cols-2 gap-8">
         <div>
           <Image src={about} alt="about" />

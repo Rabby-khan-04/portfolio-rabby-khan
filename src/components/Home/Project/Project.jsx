@@ -18,7 +18,7 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="work">
+    <section className="work" name="portfolio">
       <div className="line__brake"></div>
       <div className="max-w-[1180px] mx-auto px-3 lg:px-4 xl:px-0 py-32 relative">
         <BackgroundSquare />

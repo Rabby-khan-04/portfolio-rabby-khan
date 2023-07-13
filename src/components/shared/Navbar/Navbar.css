@@ -3,3 +3,5 @@
   backdrop-filter: blur(16px);
   border: 1px solid #2d2641;
 }
+
+/* transition-all duration-300 hover:bg-[#ffffff14] hover:border-[#ffffff14] */

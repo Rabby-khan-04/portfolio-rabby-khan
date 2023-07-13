@@ -6,6 +6,9 @@ import logo from "@/assets/images/logo/logo.png";
 import "./Navbar.css";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import NavLinks from "./NavLinks";
+import { Link as SmootScroll } from "react-scroll";
+import Link from "next/link";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -25,6 +28,27 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
+  const navLinks = [
+    {
+      path: "/",
+      title: "Home",
+    },
+    {
+      path: "/about",
+      title: "About",
+    },
+    {
+      path: "/portfolio",
+      title: "Portfolio",
+    },
+    {
+      path: "/resume",
+      title: "Resume",
+    },
+  ];
+
+  // to="test1" spy={true} smooth={true} offset={50} duration={500}
+
   return (
     <motion.header
       initial={{ y: 0 }}
@@ -36,25 +60,52 @@ const Navbar = () => {
         <Image src={logo} height={40} alt="logo" />
 
         <ul className="flex items-center gap-3">
+          {/* {navLinks.map((link) => (
+            <li key={link.path}>
+              <NavLinks href={link.path} title={link.title} />
+            </li>
+          ))} */}
+
           <li>
-            <a href="/" className="nav__link">
+            <Link href="/" className="nav__link">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav__link">
+            <SmootScroll
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav__link"
+            >
               About
-            </a>
+            </SmootScroll>
           </li>
           <li>
-            <a href="/" className="nav__link">
+            <SmootScroll
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav__link"
+            >
               Portfolio
-            </a>
+            </SmootScroll>
           </li>
           <li>
-            <a href="/" className="nav__link">
-              Resume
-            </a>
+            <SmootScroll
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav__link"
+            >
+              Contact
+            </SmootScroll>
           </li>
         </ul>
 
