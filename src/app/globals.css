@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-[1300px] mx-auto px-3 lg:px-4 xl:px-0;
+  @apply max-w-[1300px] mx-auto px-4 lg:px-5 xl:px-0;
 }
 
 .primary__btn {

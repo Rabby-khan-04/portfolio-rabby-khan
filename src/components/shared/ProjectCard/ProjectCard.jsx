@@ -25,13 +25,13 @@ const ProjectCard = ({ project, index }) => {
   return (
     <div
       className={`project__card link cursor-pointer ${
-        index % 2 === 1 ? "mt-24" : ""
+        index % 2 === 1 ? "lg:mt-24" : ""
       }`}
       onClick={() => handlePortfolioNavigation(id)}
     >
-      <div className="p-20 project__thumbnail mb-4">
+      <div className="p-10 md:p-16 xl:p-20 project__thumbnail mb-4">
         <Tilt
-          className="parallax-effect-glare-scale rounded-xl overflow-hidden w-[380px] mx-auto"
+          className="parallax-effect-glare-scale rounded-xl overflow-hidden sm:w-[380px] w-full mx-auto"
           perspective={2500}
           glareEnable={true}
           glareMaxOpacity={0.45}
@@ -39,10 +39,11 @@ const ProjectCard = ({ project, index }) => {
         >
           <Image
             src={thumbnail}
-            className="opacity-70 hover:opacity-100 transition-all duration-300 w-[380px] mx-auto inline-block rounded-xl"
+            className="opacity-70 hover:opacity-100 transition-all duration-300 sm:w-[380px] mx-auto inline-block rounded-xl w-full"
             alt="Project Image"
             width={380}
             height={442}
+            layout="responsive"
           />
         </Tilt>
       </div>

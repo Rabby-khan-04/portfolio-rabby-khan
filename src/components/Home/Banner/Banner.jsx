@@ -14,20 +14,23 @@ const Banner = () => {
   };
 
   return (
-    <section className="banner py-32" style={backgroundStyle}>
-      <div className="container grid grid-cols-8 gap-8">
-        <div className="intro col-span-5 space-y-6">
+    <section
+      className="banner py-10 sm:py-16 md:py-20 lg:py-32"
+      style={backgroundStyle}
+    >
+      <div className="container grid lg:grid-cols-8 gap-8">
+        <div className="intro lg:col-span-5 space-y-6">
           <h3 className="text-lg font-semibold text-primary">
             Welcome to my site
           </h3>
-          <h1 className="text-7xl font-bold hero__heading">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold hero__heading">
             I{"'"}m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondery">
               Rabby Khan
             </span>
             , a MernStack developer.
           </h1>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3 md:gap-5 flex-wrap">
             <IconBox Icon={FaReact} title="React.js" />
             <IconBox Icon={SiNextdotjs} title="Next.js" />
             <IconBox Icon={IoLogoNodejs} title="Node.js" />
@@ -54,7 +57,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="code__editor col-span-3 self-end">
+        <div className="code__editor lg:col-span-3 self-end">
           <CodeEditor />
         </div>
       </div>

@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <section className="contact" name="contact">
       <div className="line__brake"></div>
-      <div className="container py-32 relative">
+      <div className="container py-10 sm:py-16 md:py-20 lg:py-32 relative">
         <BackgroundSquare />
-        <div className="intro text-center mb-[72px]">
-          <h2 className="hero__heading text-7xl font font-medium mb-4">
+        <div className="intro text-center mb-12 lg:mb-[72px]">
+          <h2 className="hero__heading text-5xl md:text-6xl lg:text-7xl font-medium mb-4">
             Get In Touch
           </h2>
           <p className="text-light-gray text-xl">
@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto contact__box p-16">
+        <div className="max-w-3xl mx-auto contact__box p-8 sm:p-10 md:p-16">
           <h3 className="hero__heading text-[40px] text-center mb-4">
             Send me a message!
           </h3>

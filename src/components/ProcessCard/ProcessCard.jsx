@@ -8,7 +8,7 @@ import star from "@/assets/images/process/star.svg";
 const ProcessCard = ({ phase, title, intro, description }) => {
   return (
     <div className="process__card overflow-hidden">
-      <div className="space-y-6 p-11">
+      <div className="space-y-6 p-8 sm:p-11">
         <div className="btn__pill">
           <div className="star_icon h-6 w-6 relative">
             <Image

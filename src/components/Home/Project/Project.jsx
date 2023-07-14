@@ -22,10 +22,10 @@ const Project = () => {
   return (
     <section className="work" name="portfolio">
       <div className="line__brake"></div>
-      <div className="max-w-[1180px] mx-auto px-3 lg:px-4 xl:px-0 py-32 relative">
+      <div className="max-w-[1180px] mx-auto px-3 lg:px-4 xl:px-0 py-10 sm:py-16 md:py-20 lg:py-32 relative">
         <BackgroundSquare />
         <div className="intro text-center mb-[72px]">
-          <h2 className="hero__heading text-7xl font font-medium mb-4">
+          <h2 className="hero__heading text-5xl md:text-6xl lg:text-7xl font-medium mb-4">
             From Vision to Reality
           </h2>
           <p className="text-light-gray text-xl">
@@ -34,7 +34,7 @@ const Project = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 max-lg:max-w-xl mx-auto">
           {portfolio.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

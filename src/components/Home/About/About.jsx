@@ -5,13 +5,17 @@ import Counter from "@/components/shared/Counter/Counter";
 
 const About = () => {
   return (
-    <section className="py-32 about" name="about">
-      <div className="container grid grid-cols-2 gap-8">
+    <section className="py-10 sm:py-16 md:py-20 lg:py-32 about" name="about">
+      <div className="container grid lg:grid-cols-2 gap-8">
         <div>
-          <Image src={about} alt="about" />
+          <Image
+            src={about}
+            alt="about"
+            className="w-full max-lg:max-w-xl max-lg:mx-auto"
+          />
         </div>
-        <div className="space-y-6 self-center">
-          <h2 className="text-4xl font-semibold text-primary">
+        <div className="space-y-6 self-center max-lg:text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-primary">
             Code Crusader: Unleashing Web Wonders and Exploring Tech Horizons
           </h2>
           <p className="text-light-gray text-lg">
@@ -30,11 +34,11 @@ const About = () => {
             friends, and playing games. Life{"'"}s a blast when you combine
             technology, anime, and good times with friends!
           </p>
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 max-lg:justify-center flex-wrap">
             <Counter title="Years Old" number="22" />
             <Counter title="Years Freelancing" number="2+" />
             <Counter title="Clients" number="35+" />
-            <Counter title="Commits On Github" number="666+" />
+            <Counter title="Github Commits" number="666+" />
           </div>
         </div>
       </div>

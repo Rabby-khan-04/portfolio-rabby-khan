@@ -5,11 +5,11 @@ import BackgroundSquare from "@/components/shared/BackgroundSquare/BackgroundSqu
 
 const Process = () => {
   return (
-    <section className="process py-32">
+    <section className="process py-10 sm:py-16 md:py-20 lg:py-32">
       <div className="container relative">
         <BackgroundSquare count={4} />
         <div className="intro text-center max-w-4xl mx-auto">
-          <h2 className="hero__heading text-7xl font font-medium mb-4">
+          <h2 className="hero__heading text-5xl md:text-6xl lg:text-7xl font-medium mb-4">
             The Alchemy <br />
             of Creation
           </h2>
@@ -17,7 +17,7 @@ const Process = () => {
             Diving into the Steps and Strategies of my Creative Process
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-8">
+        <div className="mt-12 grid lg:grid-cols-2 gap-8 max-lg:max-w-2xl max-lg:mx-auto">
           {process.map((info, index) => (
             <ProcessCard
               key={index}
