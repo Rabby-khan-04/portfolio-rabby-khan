@@ -1,8 +1,10 @@
 import Image from "next/image";
 import "./ProjectCard.css";
 import Tilt from "react-parallax-tilt";
+import { useRouter } from "next/navigation";
 
 const ProjectCard = ({ project, index }) => {
+  const router = useRouter();
   const {
     id,
     title,
@@ -16,8 +18,17 @@ const ProjectCard = ({ project, index }) => {
     serverCode,
   } = project;
 
+  const handlePortfolioNavigation = (id) => {
+    router.push(`/portfolio/${id}`);
+  };
+
   return (
-    <div className={`project__card ${index % 2 === 1 ? "mt-24" : ""}`}>
+    <div
+      className={`project__card link cursor-pointer ${
+        index % 2 === 1 ? "mt-24" : ""
+      }`}
+      onClick={() => handlePortfolioNavigation(id)}
+    >
       <div className="p-20 project__thumbnail mb-4">
         <Tilt
           className="parallax-effect-glare-scale rounded-xl overflow-hidden w-[380px] mx-auto"

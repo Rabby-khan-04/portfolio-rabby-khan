@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import ProjectCard from "@/components/shared/ProjectCard/ProjectCard";
 
 const Project = () => {
-  const [projects, setProjects] = useState([]);
+  const [portfolio, setPortfolio] = useState([]);
   useEffect(() => {
-    fetch("./projects.json")
+    fetch(
+      "https://raw.githubusercontent.com/Rabby-khan-04/portfolio-projects/main/projects.json"
+    )
       .then((res) => res.json())
       .then((data) => {
-        setProjects(data);
+        setPortfolio(data);
       })
       .catch((error) => {
         console.log(error);
@@ -33,7 +35,7 @@ const Project = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {portfolio.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>

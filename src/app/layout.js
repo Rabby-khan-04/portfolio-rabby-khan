@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import Cursor from "@/components/shared/Cursor/Cursor";
-import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,8 +14,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
-  console.log(AnimatePresence);
   return (
     <html lang="en">
       <AnimatePresence>

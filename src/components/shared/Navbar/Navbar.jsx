@@ -57,7 +57,9 @@ const Navbar = () => {
       className="sticky top-0 p-3 z-50"
     >
       <nav className="rounded-xl p-4 navbar flex justify-between items-center">
-        <Image src={logo} height={40} alt="logo" />
+        <Link href="/">
+          <Image src={logo} height={40} alt="logo" />
+        </Link>
 
         <ul className="flex items-center gap-3">
           {/* {navLinks.map((link) => (
