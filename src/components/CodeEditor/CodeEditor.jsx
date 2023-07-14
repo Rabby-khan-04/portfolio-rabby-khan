@@ -6,6 +6,7 @@ import copyIcon from "@/assets/icons/copy_icon.svg";
 import copiedIcon from "@/assets/icons/copied_icon.svg";
 import Image from "next/image";
 import { useState } from "react";
+import "./CodeEditor.css";
 
 const CodeEditor = () => {
   const [copy, setCopy] = useState(false);
@@ -44,7 +45,7 @@ export default Welcome;
   };
 
   return (
-    <figure className="relative w-full flex-col overflow-hidden rounded-md border-2 border-gray-200/40 bg-[#0f172a] p-2.5 shadow-2xl drop-shadow-lg d:border-gray-600/40 overflow-y-scroll h-[460px]         ">
+    <figure className="relative w-full flex-col overflow-hidden rounded-md border-2 border-gray-200/40 bg-[#0f172a] p-2.5 shadow-2xl drop-shadow-lg d:border-gray-600/40 overflow-y-scroll h-[460px] code__container">
       <header
         className="mb-2 grid items-center border-b border-b-gray-800 pb-2"
         style={{ gridTemplateColumns: "50px 1fr 50px" }}
@@ -80,11 +81,11 @@ export default Welcome;
         </div>
       </header>
       <main className=" relative h-[calc(100%-37px)] overflow-hidden before:absolute max-w-full w-full">
-        <div className="sm:scrollbar-none relative h-full overflow-auto ">
+        <div className="sm:scrollbar-none relative h-full overflow-auto code__container">
           <SyntaxHighlighter
             language="javascript"
             style={shadesOfPurple}
-            className="max-w-xs"
+            className="max-w-xs sm:max-w-full"
             wrapLines={true}
             customStyle={{
               background: "#0f172a",

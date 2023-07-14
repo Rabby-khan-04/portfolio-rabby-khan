@@ -9,10 +9,12 @@ import { FaGithub } from "react-icons/fa";
 import NavLinks from "./NavLinks";
 import { Link as SmootScroll } from "react-scroll";
 import Link from "next/link";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +63,7 @@ const Navbar = () => {
           <Image src={logo} height={40} alt="logo" />
         </Link>
 
-        <ul className="flex items-center gap-3">
+        <ul className="hidden lg:flex items-center gap-3">
           {/* {navLinks.map((link) => (
             <li key={link.path}>
               <NavLinks href={link.path} title={link.title} />
@@ -111,7 +113,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <ul className="flex items-center gap-8">
+        <ul className="lg:flex items-center gap-8 hidden">
           <li>
             <a href="https://github.com/Rabby-khan-04">
               <FaGithub className="text-2xl text-light transition-all duration-300 hover:text-primary" />
@@ -123,6 +125,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+        <Dropdown open={open} setOpen={setOpen} />
       </nav>
     </motion.header>
   );

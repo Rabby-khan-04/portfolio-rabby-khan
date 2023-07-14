@@ -58,6 +58,20 @@ const Banner = () => {
           </div>
         </div>
         <div className="code__editor lg:col-span-3 self-end">
+          <div className="flex justify-end gap-1.5 mb-4">
+            <span className="about__tag border-cyan-400/20 bg-cyan-900/70">
+              Cyclist
+            </span>
+            <span className="about__tag border-green-400/20 bg-green-900/70">
+              Code Wizard
+            </span>
+            <span className="about__tag border-orange-400/20 bg-orange-700/70">
+              Tech Geek
+            </span>
+            <span className="about__tag border-gray-400/20 bg-gray-900/70">
+              Freelancer
+            </span>
+          </div>
           <CodeEditor />
         </div>
       </div>

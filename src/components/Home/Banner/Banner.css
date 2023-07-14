@@ -5,3 +5,7 @@
     rgba(126, 61, 255, 0) 100%
   );
 }
+
+.about__tag {
+  @apply inline-flex select-none items-center whitespace-nowrap rounded-md border-2 font-medium transition-all px-2.5 py-0.5 text-[13px] cursor-pointer text-white;
+}

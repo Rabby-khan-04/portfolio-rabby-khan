@@ -1,0 +1,3 @@
+.dropdown__nav__link {
+  @apply text-3xl text-light-gray block;
+}
