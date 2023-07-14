@@ -1,8 +1,6 @@
 "use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/shared/Navbar/Navbar";
-import Footer from "@/components/shared/Footer/Footer";
 import Cursor from "@/components/shared/Cursor/Cursor";
 import { AnimatePresence } from "framer-motion";
 
@@ -19,9 +17,7 @@ export default function RootLayout({ children }) {
       <AnimatePresence>
         <body className={`${inter.className} bg-accent`}>
           <Cursor />
-          <Navbar />
           <main>{children}</main>
-          <Footer />
         </body>
       </AnimatePresence>
     </html>

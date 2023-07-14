@@ -38,8 +38,8 @@ const SinglePortfolioPage = ({ params }) => {
   console.log(tech);
 
   return (
-    <section className="grid grid-cols-3">
-      <div className="col-span-2">
+    <section className="grid lg:grid-cols-5 xl:grid-cols-3">
+      <div className="lg:col-span-3 xl:col-span-2">
         <Image
           src={image}
           alt="Project Image"
@@ -48,7 +48,7 @@ const SinglePortfolioPage = ({ params }) => {
           layout="responsive"
         />
       </div>
-      <div className="relative px-10 py-[30px]">
+      <div className="relative px-4 sm:px-5 md:px-10 py-[30px] lg:col-span-2 xl:col-span-1 order-first lg:order-last">
         <div className="sticky top-8">
           <div>
             <Link href="/" className="btn__rounded">
@@ -62,7 +62,7 @@ const SinglePortfolioPage = ({ params }) => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-6 flex-wrap">
             {tech &&
               tech.map((techItem, index) => (
                 <TechBox key={index} tech={techItem} />
@@ -70,7 +70,7 @@ const SinglePortfolioPage = ({ params }) => {
           </div>
 
           <p className="text-lg text-light-gray">{description}</p>
-          <div className="flex items-center gap-5 mt-5">
+          <div className="flex items-center gap-5 mt-5 flex-wrap">
             <a
               className="btn__pill__xl text-xl text-light-gray"
               href={clientCode}
